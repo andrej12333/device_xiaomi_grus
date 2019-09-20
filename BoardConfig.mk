@@ -181,7 +181,7 @@ TARGET_USE_SDCLANG := true
 # Include SDCLANG definitions if it is requested and available
 ifeq ($(HOST_OS),linux)
     ifneq ($(wildcard vendor/qcom/sdclang/),)
-        include vendor/lineage/build/core/sdllvm-lto-defs.mk
+        include vendor/rr/build/core/sdllvm-lto-defs.mk
     endif
 endif
 
