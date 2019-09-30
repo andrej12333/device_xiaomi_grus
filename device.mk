@@ -9,7 +9,6 @@ $(call inherit-product-if-exists, vendor/xiaomi/grus/grus-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
@@ -478,6 +477,6 @@ PRODUCT_PACKAGES += \
     com.dsi.ant.antradio_library
 
 # Config panel
-PRODUCT_PACKAGES += \
-    ConfigPanel
+#PRODUCT_PACKAGES += \
+#    ConfigPanel
 
