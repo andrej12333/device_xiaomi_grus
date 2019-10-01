@@ -58,6 +58,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	sys.displayfeature_hidl=true \
 	sys.displayfeature.hbm.enable=true \
 	vendor.display.enable_default_color_mode=1 \
+	persist.ppd.fde.config=0 \
 	ro.vendor.qti.sys.fw.bservice_limit=5 \
 	ro.vendor.qti.sys.fw.bservice_age=5000 \
 	ro.cutoff_voltage_mv=3400 \

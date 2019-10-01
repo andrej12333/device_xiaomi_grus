@@ -98,6 +98,14 @@ PRODUCT_PACKAGES += \
     tinymix \
     libaudio_log_utils
 
+# JamesDSPManager
+PRODUCT_PACKAGES += \
+    JamesDSPManager \
+    libjamesDSPImpulseToolbox
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    libbthost_if
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
@@ -163,7 +171,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     gralloc.sdm710 \
     memtrack.sdm710 \
-    thermal.sdm710 \
     hwcomposer.sdm710 \
     android.frameworks.displayservice@1.0 \
     android.hardware.graphics.composer@2.1-service \
@@ -178,7 +185,6 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.7 \
     vendor.qti.hardware.display.allocator@1.0-service
 
-# LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
     
@@ -270,6 +276,10 @@ PRODUCT_COPY_FILES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.grus
+
+# RenderScript
+PRODCTU_PACKAGES += \
+    android.hardware.renderscript@1.0-impl
 
 # IPACM
 PRODUCT_PACKAGES += \
@@ -384,7 +394,14 @@ PRODUCT_BOOT_JARS += \
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
-    android.hardware.thermal@1.0-service
+    android.hardware.thermal@1.0-service \
+    thermal.sdm710
+
+# VR
+PRODUCT_PACKAGES += \
+    android.hardware.vr@1.0-impl \
+    android.hardware.vr@1.0-service \
+    vr.sdm710
 
 # TextClassifier
 PRODUCT_PACKAGES += \
@@ -472,6 +489,6 @@ PRODUCT_PACKAGES += \
     com.dsi.ant.antradio_library
 
 # Config panel
-#PRODUCT_PACKAGES += \
-#    ConfigPanel
+PRODUCT_PACKAGES += \
+    ConfigPanel
 

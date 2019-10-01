@@ -24,6 +24,14 @@
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
+    
+
+    <!-- Boolean indicating whether single radio chain scan results are to be used for network selection -->	
+    <bool translatable="false" name="config_wifi_framework_use_single_radio_chain_scan_results_network_selection">true</bool>    
+
+    <!-- Default state for LiveDisplay -->
+    <bool name="config_liveDisplayAvailable">true</bool>
+
     <!-- Indicate whether to allow the device to suspend when the screen is off
          due to the proximity sensor.  This resource should only be set to true
          if the sensor HAL correctly handles the proximity sensor as a wake-up source.
@@ -198,7 +206,7 @@
     <!-- Indicate whether closing the lid causes the device to go to sleep and opening
          it causes the device to wake up.
          The default is false. -->
-    <bool name="config_lidControlsSleep">false</bool>
+    <bool name="config_lidControlsSleep">true</bool>
 
     <!-- ComponentName of a dream to show whenever the system would otherwise have
          gone to sleep.  When the PowerManager is asked to go to sleep, it will instead
@@ -403,7 +411,9 @@
           be picked. Anyone who wants to disable the overlay mechanism can set it
           to false.
     -->
-    <bool name="config_enableNetworkLocationOverlay" translatable="false">true</bool>
+
+    <bool name="config_enableNetworkLocationOverlay" translatable="true">false</bool>
+    <bool name="config_enableFusedLocationOverlay" translatable="false">true</bool>
 
     <!-- User activity timeout: Maximum screen dim duration as a percentage of screen off timeout.
          This resource is similar to config_maximumScreenDimDuration but the maximum
@@ -1148,6 +1158,12 @@
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
     <item name="config_screenAspectRatio" format="float" type="dimen">2.1</item>
 
+    <!-- Whether or not swipe up gesture's opt-in setting is available on this device -->
+    <bool name="config_swipe_up_gesture_setting_available">true</bool>
+
+    <!-- Smart Pixels -->
+    <bool name="config_enableSmartPixels">true</bool>
+
     <string translatable="false" name="config_mainBuiltInDisplayCutout">M-86.9975334,10.7082389 C-74.1335099,23.7038575 -64.104552,36.2300641 -56.9106598,48.2868587 C-45.0899716,68.1052477 -23.8069241,81 0.002904346,81 C23.8127328,81 45.0899716,68.1052477 56.9164685,48.2868587 C64.1090408,36.2290779 74.1379482,23.7022572 87.0031906,10.7063968 L87,0 L-87,0 L-86.9975334,10.7082389 Z</string>
 
     <!-- Whether the device has fingeprint sensor or not -->
@@ -1169,7 +1185,7 @@
     <!-- Default value for proximity check on screen wake
      NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)-->
     <bool name="config_proximityCheckOnWake">true</bool>
-    <integer name="config_proximityCheckTimeout">200</integer>
+    <integer name="config_proximityCheckTimeout">100</integer>
     <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
 
     <!-- Hardware keys present on the device, stored as a bit field.

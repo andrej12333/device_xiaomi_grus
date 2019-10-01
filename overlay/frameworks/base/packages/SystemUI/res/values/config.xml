@@ -36,8 +36,6 @@
         <item>7</item> <!-- 4: SUN -->
     </integer-array>
 
+    <!-- Should "4G" be shown instead of "LTE" when the network is NETWORK_TYPE_LTE? -->
     <bool name="config_show4GForLTE">true</bool>
-
-    <!-- VoLTE: Show new HD VoLTE icon  -->
-    <bool name="config_display_hd_volte">true</bool>
 </resources>

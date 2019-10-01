@@ -30,6 +30,7 @@ BUILD_FINGERPRINT := "Xiaomi/grus/grus:9/PKQ1.181121.001/V10.3.3.0.PFBCNXM:user/
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="grus-user 9 PKQ1.181121.001 V10.3.3.0.PFBCNXM release-keys" \
     PRODUCT_NAME="grus" \
-    TARGET_DEVICE="grus"
+    TARGET_DEVICE="grus" \
+    DEVICE_MAINTAINERS="pengus77@xda"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
