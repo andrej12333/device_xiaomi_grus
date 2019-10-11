@@ -22,7 +22,6 @@ import android.content.Intent;
 import android.util.Log;
 
 import org.lineageos.settings.device.flickerfree.FlickerFreeSettingsActivity;
-import org.lineageos.settings.device.sound.SoundSettingsActivity;
 import org.lineageos.settings.device.flickerfree.Utils;
 
 public class DeviceStartup extends BroadcastReceiver {
