@@ -492,3 +492,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.control-V1.0-java
 
+# SKETCHOLOGY
+PRODUCT_PACKAGES += \
+    libsketchology_native
