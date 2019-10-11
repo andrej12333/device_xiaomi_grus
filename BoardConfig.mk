@@ -8,6 +8,10 @@ BOARD_VENDOR := xiaomi
 
 DEVICE_PATH := device/xiaomi/grus
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2340
+TARGET_SCREEN_WIDTH := 1080
+
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2019-08-05
 
@@ -38,7 +42,6 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
 #DTBO
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
-TARGET_KERNEL_APPEND_DTB := true
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := grus
@@ -204,7 +207,7 @@ TARGET_USE_SDCLANG := true
 # Include SDCLANG definitions if it is requested and available
 ifeq ($(HOST_OS),linux)
     ifneq ($(wildcard vendor/qcom/sdclang/),)
-        include vendor/lineage/build/core/sdllvm-lto-defs.mk
+        include vendor/bootleggers/build/core/sdllvm-lto-defs.mk
     endif
 endif
 

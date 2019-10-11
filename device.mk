@@ -242,7 +242,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # Fingerprint
 PRODUCT_COPY_FILES += \
-    vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml \
+    vendor/bootleggers/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml \
     $(LOCAL_PATH)/fingerprint/android.hardware.biometrics.fingerprint@2.1-service.rc:system/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml
 
@@ -488,12 +488,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ConfigPanel
 
-# Omni Switch
-PRODUCT_PACKAGES += \
-    OmniSwitch
-
 # Tether Offload
 PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.control-V1.0-java
-
 

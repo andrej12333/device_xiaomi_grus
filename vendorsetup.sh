@@ -1,3 +1,3 @@
 
-add_lunch_combo lineage_grus-userdebug
+add_lunch_combo bootleg_grus-userdebug
 
