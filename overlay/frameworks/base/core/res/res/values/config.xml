@@ -1229,4 +1229,6 @@
 
     <!-- Smart Pixels -->
     <bool name="config_enableSmartPixels">true</bool>
+
+    <bool name="config_supportsInDisplayFingerprint">true</bool>
 </resources>
