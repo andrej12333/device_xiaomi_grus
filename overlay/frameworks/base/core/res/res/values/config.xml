@@ -232,7 +232,7 @@
 
          Refer to power.h for details.
     -->
-    <bool name="config_powerDecoupleInteractiveModeFromDisplay">false</bool>
+    <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
 
     <!-- Configure mobile tcp buffer sizes in the form:
          rat-name:rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max
@@ -445,9 +445,6 @@
     <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
 
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
-
-    <!-- Doze: does this device support STATE_DOZE?  -->
-    <bool name="doze_display_state_supported">true</bool>
 
     <!-- Doze: does this device support STATE_DOZE_SUSPEND?  -->
     <bool name="doze_suspend_display_state_supported">true</bool>
@@ -1120,7 +1117,7 @@
     <bool name="config_show_vendor_mismatch_message">false</bool>
 
     <!-- Whether device has a physical display cutout -->
-    <bool name="config_physicalDisplayCutout">false</bool>
+    <bool name="config_physicalDisplayCutout">true</bool>
 
     <!-- Whether device has oled display -->
     <bool name="config_hasOledDisplay">true</bool>
@@ -1231,4 +1228,8 @@
     <bool name="config_enableSmartPixels">true</bool>
 
     <bool name="config_supportsInDisplayFingerprint">true</bool>
+
+    <!-- Whether to allow sending active app broadcast -->
+    <bool name="config_allowActivePackageBroadcast">true</bool>
+
 </resources>
