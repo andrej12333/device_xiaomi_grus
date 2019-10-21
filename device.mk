@@ -497,3 +497,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsketchology_native
 
+# DOZE
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
