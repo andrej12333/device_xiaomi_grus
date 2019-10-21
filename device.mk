@@ -9,7 +9,6 @@ $(call inherit-product-if-exists, vendor/xiaomi/grus/grus-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
@@ -136,7 +135,8 @@ PRODUCT_COPY_FILES += \
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \
-    com.dsi.ant.antradio_library
+    com.dsi.ant.antradio_library \
+    libantradio
 
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
@@ -495,3 +495,4 @@ PRODUCT_PACKAGES += \
 # SKETCHOLOGY
 PRODUCT_PACKAGES += \
     libsketchology_native
+
