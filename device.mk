@@ -92,12 +92,15 @@ PRODUCT_PACKAGES += \
     libaudio-resampler \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libqcomvoiceprocessing \
     libqcompostprocbundle \
     libvolumelistener \
     libtinycompress \
     tinymix \
     libaudio_log_utils
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    libbthost_if
 
 # JamesDSPManager
 PRODUCT_PACKAGES += \
@@ -479,11 +482,6 @@ PRODUCT_COPY_FILES += \
 # qti telephony
 PRODUCT_PACKAGES += \
     qti-telephony-common
-
-# ANT+
-PRODUCT_PACKAGES += \
-    AntHalService \
-    com.dsi.ant.antradio_library
 
 # Config panel
 PRODUCT_PACKAGES += \
