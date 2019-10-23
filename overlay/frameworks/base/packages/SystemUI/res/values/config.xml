@@ -40,4 +40,7 @@
 
     <!-- VoLTE: Show new HD VoLTE icon  -->
     <bool name="config_display_hd_volte">true</bool>
+
+    <!-- Doze: Disable proximity sensor related options -->
+    <bool name="doze_proximity_check_before_pulse">false</bool>
 </resources>
