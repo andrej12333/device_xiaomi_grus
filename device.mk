@@ -451,7 +451,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf
 
 PRODUCT_BOOT_JARS += \
-    WfdCommon
+    WfdCommon \
+    UxPerformance
 
 # Input
 PRODUCT_COPY_FILES += \
