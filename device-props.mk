@@ -34,7 +34,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.fluence.voicerec=false \
     persist.audio.fluence.speaker=true \
     use.voice.path.for.pcm.voip=true \
-    tunnel.audio.encode=true
+    tunnel.audio.encode=true \
+    audio.safemedia.bypass=true \
+    audio.safemedia.force=false
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
