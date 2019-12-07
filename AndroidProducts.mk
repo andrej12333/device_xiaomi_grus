@@ -14,8 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/lineage_grus.mk
+	$(LOCAL_DIR)/syberia_grus.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_grus-userdebug \
-    lineage_grus-eng
+    syberia_grus-userdebug 
