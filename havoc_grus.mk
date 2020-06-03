@@ -13,13 +13,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common stuff
-$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Inherit from land device
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := bliss_grus
+PRODUCT_NAME := havoc_grus
 PRODUCT_DEVICE := grus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9 SE
@@ -34,7 +34,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=google/flame/flame:10/QQ2A.200501.001.A3/6353761:user/release-keys \
-    ro.bliss.maintainer=pengus77
+    ro.bliss.maintainer=andrej12333
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
