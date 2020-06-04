@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/havoc_grus.mk
+	$(LOCAL_DIR)/nitrogen_grus.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_grus-userdebug 
+    nitrogen_grus-userdebug 
